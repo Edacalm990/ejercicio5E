@@ -9,7 +9,7 @@ package Ej5E;
  * @author eli
  */
 public enum Iva {
-    SUPER_REDUCIDO (0.4),
+    SUPER_REDUCIDO (0.04),
     REDUCIDO(0.10),
     NORMAL(0.21);
     
