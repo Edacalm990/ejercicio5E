@@ -42,15 +42,7 @@ public class Ticket {
         
         return tmp;
     }
-    
-    
-        
 
-//    Un Ticket tiene la fecha en la que se genera y la lista de productos contenidos en el ticket. 
-    // Además, se debe mantener una lista de productos según su tipo de IVA. El ticket, si se usa su método toString, 
-    //debe devolver una lista de todos los productos con su nombre, precio, cantidad a comprar, iva y precio total d esos productos sin iva, 
-    //uno debajo de otro. Además en otras líneas mostrará: total de productos por tipo de iva, suma de los precios de esos productos y precio con IVA. 
-    // Finalmente debe mostrar el total a pagar por el cliente. 
 
     public Cinta getCinta() {
         return cinta;

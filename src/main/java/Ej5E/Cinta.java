@@ -70,18 +70,18 @@ public class Cinta<Producto> {
             switch (prueba.get(i).iva().name()) {
                 case "SUPER_REDUCIDO":
                     array[0][0]++;
-                    array[1][0]+=prueba.get(i).precio();
-                    array[2][0]+=prueba.get(i).precio()+(prueba.get(i).precio()*prueba.get(i).iva().getCantidad());
+                    array[1][0]+=prueba.get(i).precio()*prueba.get(i).cantidadComprar();
+                    array[2][0]+=(prueba.get(i).precio()+(prueba.get(i).precio()*prueba.get(i).iva().getCantidad()))*prueba.get(i).cantidadComprar();
                     break;
                 case "REDUCIDO":
                     array[0][1]++;
-                    array[1][1]+=prueba.get(i).precio();
-                    array[2][1]+=prueba.get(i).precio()+(prueba.get(i).precio()*prueba.get(i).iva().getCantidad());
+                    array[1][1]+=prueba.get(i).precio()*prueba.get(i).cantidadComprar();
+                    array[2][1]+=(prueba.get(i).precio()+(prueba.get(i).precio()*prueba.get(i).iva().getCantidad()))*prueba.get(i).cantidadComprar();
                     break;
                 case "NORMAL":
                     array[0][2]++;
-                    array[1][2]+=prueba.get(i).precio();
-                    array[2][2]+=prueba.get(i).precio()+(prueba.get(i).precio()*prueba.get(i).iva().getCantidad());
+                    array[1][2]+=prueba.get(i).precio()*prueba.get(i).cantidadComprar();
+                    array[2][2]+=(prueba.get(i).precio()+(prueba.get(i).precio()*prueba.get(i).iva().getCantidad()))*prueba.get(i).cantidadComprar();
                     break;
                 default:
                     throw new AssertionError();
